@@ -13,12 +13,7 @@ concreteStrengthPredictorFile = open('model/concrete_lgbm_final_model_ver_1_0.sa
 concreteStrengthPredictorModel = pickle.load(concreteStrengthPredictorFile)
 concreteStrengthPredictorFile.close()
 	
-@app.route('/')
-@app.route('/index')
-def home():
-    return "Hi, Welcome to Flask!!"
 
-	
 # Render Concrete mixture input page
 @app.route('/input')
 def input():
